@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --color-primary: #4F7BCD;
+    --color-white: white;
+    --color-secondary: #0D244F;
+    --color-third: #B7B0B0;
+}
+
+*{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* PRINCIPAL */
+
+.principal{
+    height: 100vh ;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1rem 0;
+}
+
+.contenidoPrincipal{
+    position: relative;
+    width: 80%;
+}
+
+.imgPrincipal{
+    width: 350px;
+}
+
+.titulos{
+    margin-bottom: 8rem;
+}
+.titulo{
+    font-size: 3rem;
+}
+
+.contenidoBuscador{
+    position: absolute;
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.7);
+    left: 0;
+    bottom: -5%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.inputBuscador{
+    width: 100%;
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    /* color:  var(--color-third); */
+}
+
+.inputRange{
+    width: 100%;
+}
+
+.labelRango{
+    color: #877C7C;
+}
+
+.labelRangoNumeros{
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.botonBuscar{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: .5rem 6rem;
+}
