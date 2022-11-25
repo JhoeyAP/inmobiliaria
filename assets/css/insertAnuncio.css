@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --color-primary: #4F7BCD;
+    --color-white: white;
+    --color-secondary: #0D244F;
+    --color-third: #B7B0B0;
+    --color-transparent: #CAD7F0;
+}
+
+*{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* CONTENEDOR */
+
+.h90{
+    height: 90%;
+}
+
+.principal{
+    height: calc(100vh - 74px);
+}
+
+.contenedorAnuncio{
+    width: 100%;
+    height: calc(100vh - 140px);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.menuInsert{
+    background-color: var(--color-white);
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.menuInsertItem{
+    background-color: var(--color-transparent);
+    padding: .6rem;
+    border-radius: 5px;
+    font-size: 14px;
+    /* cursor: pointer; */
+}
+
+.active{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* .menuInsertItem:hover{
+    background-color: var(--color-primary);
+
+} */
+.padre{
+    position: relative;
+}
+.posicionar{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.posicionarRegreso{
+    position: absolute;
+    bottom: 0;
+    right: 35%;
+}
+.botonRegresar{
+    padding: .5rem 6rem;
+    background-color: var(--color-white);
+    color: var(--color-secondary);
+}
+.botonSiguiente{
+    padding: .5rem 6rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+.inputInsert{
+    width: 100%;
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    padding: .7rem 1rem;
+}
+
+.labelInsert{
+    color: var(--color-secondary);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 7px
+}
+
+#frmAnuncios fieldset:not(:first-of-type) {
+    display: none;
+  }
+
+.tituloNombre{
+    color: var(--color-primary);
+    font-weight: 600;
+}

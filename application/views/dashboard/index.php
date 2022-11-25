@@ -52,6 +52,34 @@
                 </div>
             </div>
         </div>
+    </div>
+    
 
+</div>
+<div class="contentAnuncios">
+    <div class="container">
+        <div class="d-flex justify-content-between mb-4 align-items-center contenedorTitulo">
+            <h3 class="tituloAnuncioItem">Anuncios <span class="tituloAnuncioItem2">Destacados</span></h3>
+            <button class="boton botonVerTodos" type="button">Ver Todos <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        </div>
+        <div class="row">
+            <?php foreach($anuncios as $element) {?>
+                <div class="col-4 mb-5">
+                    <div class="card">
+                        <img class="card-img-top" src="<?= $element->imagen ?>" alt="">
+                        <div class="card-body d-flex flex-column gap-2">
+                            <span class="d-block operacionCard"><?= $element->tipoOperacion ?></span>
+                            <span class="d-block tituloCard" ><?= $element->titulo ?></span>
+                            <span class="d-block detallesCard"><i class="fa-solid fa-location-dot"></i> <?= $element->ubicacion ?></span>
+                            <span class="d-block detallesCard">Area Total: <?= $element->areaTotal ?>m²</span>
+                            <div class="d-flex justify-content-between">
+                                <span class="precioCard">S/ <?= $element->precio ?></span>
+                                <button class="boton botonVerMas" type="button">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
     </div>
 </div>

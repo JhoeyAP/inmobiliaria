@@ -28,6 +28,8 @@
 }
 
 .menuItem{
+    text-decoration: none;
+    color: var(--color-white);
     padding: .5rem 1rem;
     cursor: pointer;
     
@@ -71,4 +73,5 @@
 
 .botonRegistro:hover{
     color: var(--color-white);
+
 }
