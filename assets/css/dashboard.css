@@ -4,6 +4,7 @@
     --color-white: white;
     --color-secondary: #0D244F;
     --color-third: #B7B0B0;
+    --color-danger: #DC4C38;
 }
 
 *{
@@ -73,4 +74,57 @@
     background-color: var(--color-primary);
     color: var(--color-white);
     padding: .5rem 6rem;
+}
+
+/* ANUNCIOS */
+
+.contentAnuncios{
+    background-color: #F6F6F7;
+    padding: 3rem 0;
+}
+
+.contenedorTitulo{
+    background-color: var(--color-white);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.tituloAnuncioItem{
+    color: var(--color-primary);
+    font-weight: bold;
+}
+.tituloAnuncioItem2{
+    color: var(--color-secondary);
+}
+
+.botonVerTodos{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: .5rem 2rem;
+}
+
+.operacionCard{
+    color: var(--color-danger);
+    font-weight: 600;
+}
+
+.tituloCard{
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 16px;
+}
+.detallesCard{
+    color: var(--color-third);
+}
+
+.precioCard{
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.botonVerMas{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: .4rem 2rem;
 }
